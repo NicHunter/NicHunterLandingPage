@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nic Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="laser-grid"></div>
+    <div class="scanning-line"></div>
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span class="glow-text">CYBER TOOLKIT</span>
+            </h1>
+            <p class="subtitle">External Investigation Tools (Redirect)</p>
+        </div>
+    </header>
+
+    <nav class="nav-menu">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#ip-tools" class="nav-link" data-section="ip-tools">IP Investigation</a></li>
+                <li><a href="#email-tools" class="nav-link" data-section="email-tools">Email Analysis</a></li>
+                <li><a href="#hash-tools" class="nav-link" data-section="hash-tools">Hash Investigation</a></li>
+                <li><a href="#osint-tools" class="nav-link" data-section="osint-tools">OSINT Tools</a></li>
+                <li><a href="#linux-commands" class="nav-link" data-section="linux-commands">Linux Commands</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- IP Investigation Tools -->
+            <section id="ip-tools" class="tool-section active">
+                <h2 class="section-title">
+                    <span class="laser-icon">🔍</span>
+                    IP Address Investigation
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>HackerTarget IP Tools</h3>
+                        <p>Comprehensive IP investigation suite with traceroute, DNS lookup, port scanning</p>
+                        <a href="https://hackertarget.com/ip-tools/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>CentralOps Domain Dossier</h3>
+                        <p>Complete domain and IP investigation in one report</p>
+                        <a href="https://centralops.net/co/DomainDossier.aspx" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>VirusTotal IP Analysis</h3>
+                        <p>IP reputation and threat analysis</p>
+                        <a href="https://www.virustotal.com/gui/home/search" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Shodan</h3>
+                        <p>Search engine for internet-connected devices</p>
+                        <a href="https://www.shodan.io/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>IP Geolocation</h3>
+                        <p>Geographic location and ISP information</p>
+                        <a href="https://www.iplocation.net/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Email Investigation Tools -->
+            <section id="email-tools" class="tool-section">
+                <h2 class="section-title">
+                    <span class="laser-icon">📧</span>
+                    Email Investigation
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>Hunter.io</h3>
+                        <p>Find email addresses and verify domains</p>
+                        <a href="https://hunter.io/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Epieos</h3>
+                        <p>Email and phone OSINT investigations</p>
+                        <a href="https://epieos.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>MXToolbox</h3>
+                        <p>Email server analysis and blacklist checking</p>
+                        <a href="https://mxtoolbox.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Have I Been Pwned</h3>
+                        <p>Check if email appears in data breaches</p>
+                        <a href="https://haveibeenpwned.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>TheHarvester</h3>
+                        <p>Gather emails, subdomains, and IPs from public sources</p>
+                        <a href="https://github.com/laramies/theHarvester" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hash Investigation Tools -->
+            <section id="hash-tools" class="tool-section">
+                <h2 class="section-title">
+                    <span class="laser-icon">🔐</span>
+                    Hash Investigation
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>VirusTotal Hash Lookup</h3>
+                        <p>Multi-engine malware analysis for file hashes</p>
+                        <a href="https://www.virustotal.com/gui/home/search" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>CIRCL Hash Lookup</h3>
+                        <p>Lookup file hashes against known databases</p>
+                        <a href="https://hashlookup.circl.lu/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Hybrid Analysis</h3>
+                        <p>Advanced malware analysis and hash investigation</p>
+                        <a href="https://www.hybrid-analysis.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Malware Bazaar</h3>
+                        <p>Hash database of recent malware samples</p>
+                        <a href="https://bazaar.abuse.ch/browse/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OSINT Tools -->
+            <section id="osint-tools" class="tool-section">
+                <h2 class="section-title">
+                    <span class="laser-icon">🕵️</span>
+                    OSINT Tools
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>Maltego</h3>
+                        <p>Link analysis and data visualization platform</p>
+                        <a href="https://www.maltego.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>SpiderFoot</h3>
+                        <p>Automated OSINT collection tool</p>
+                        <a href="https://github.com/smicallef/spiderfoot" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Recon-ng</h3>
+                        <p>Web reconnaissance framework</p>
+                        <a href="https://github.com/lanmaster53/recon-ng" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Censys</h3>
+                        <p>Internet-wide scanning and analysis</p>
+                        <a href="https://censys.io/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h3>OSINT Framework</h3>
+                        <p>Collection of OSINT tools and resources</p>
+                        <a href="https://osintframework.com/" target="_blank" class="laser-btn">
+                            Launch Tool
+                            <span class="btn-glow"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Linux Commands Generator -->
+            <section id="linux-commands" class="tool-section">
+                <h2 class="section-title">
+                    <span class="laser-icon">⚡</span>
+                    Linux Investigation Commands
+                </h2>
+                <div class="command-generator">
+                    <div class="generator-controls">
+                        <label for="command-category" class="form-label">Investigation Category:</label>
+                        <select id="command-category" class="form-control laser-select">
+                            <option value="network_investigation">Network Investigation</option>
+                            <option value="process_investigation">Process Investigation</option>
+                            <option value="file_investigation">File Investigation</option>
+                            <option value="log_analysis">Log Analysis</option>
+                        </select>
+                    </div>
+                    
+                    <div class="command-output">
+                        <div class="command-list" id="command-list">
+                            <!-- Commands will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cyber Laser Toolkit - Professional Investigation Tools</p>
+            <div class="laser-pulse"></div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
